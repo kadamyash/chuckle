@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root{
+    --df-fnt: "Inter", sans-serif; 
+    --serif-fnt: 'Playfair Display', serif;
+    --alt-fnt: 'Arimo', sans-serif;
+    --cursive-fnt: 'Indie Flower', cursive;
+
+    --dark: #403d39;
+    --light: #f7ede2;
+    --grey: #d9d9d9;
+    --red: #dc2f02;
+    --dark-red: #9d0208;
+    --orange: #f48c06;
+    --yellow: #ffc300;
+    --blue: #4895ef;
+    --dark-blue: #013a63;
+    --green: #2b9348;
+
+    --text-dark: #03071e;
+    --text-light: #fffcf2;
+}
+
+
+*{
+    font-family: var(--df-fnt);
+}
+
+.main{
+    height: 100%;
+}
+
+.light{
+    background-color: var(--light);
+    color: var(--text-dark);
+}
+
+.dark{
+    background-color: var(--dark);
+    color: var(--text-light);
+}
+
+.solarized{
+    background-color: var(--dark);
+    color: var(--text-light);
+}
+
+/* fonts */
+
+.inter-fnt{
+    font-family: var(--df-fnt);
+}
+
+.arimo-font{
+    font-family: var(--alt-fnt);
+}
+
+.playfair-fnt{
+    font-family: var(--serif-fnt);
+}
+
+.indie-flower-fnt{
+    font-family: var(--cursive-fnt);
+}
+
+/* typography */
+
+.header{
+    font-size: 32px;
+}
+
+.title{
+    font-size: 24px;
+}
+
+.subtitle{
+    font-size: 20px
+}
+
+.text{
+    font-size: 16px;
+}
+
+.muted{
+    font-size: 13px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.italics{
+    font-style: italic;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.strikethrough{
+    text-decoration: line-through;
+}
+
+/* general */
+
+.not-a-link{
+    color: inherit;
+}
+
+.not-a-link:hover{
+    color: inherit;
+}
+
+.fullscreen{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#themeSelector{
+    cursor: pointer;
+}
+
+#themeSelector:hover{
+    color: var(--primary);
+}
+
+.theme-container{
+    display: inline;
+}
+
+/* override features */
+
+
+
+.active{
+    background-color: var(--sorta-grey) !important;
+}
+
+
+
+/* phone? */
+
+@media screen and (max-width:1000px) {
+    .theme-container{
+            display: block;
+            margin-left: 10px;
+    }
+
+    .nav-link{
+            padding: 10px 20px !important;
+            margin: 5px auto;
+    }
+}
